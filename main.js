@@ -20,7 +20,8 @@ async function fetchAPI (){
     console.log(data);
 }
 function generateHTML(results){
-    const generatedHTML = '';
+    container.classList.remove('initial');
+    let generatedHTML = '';
     results.map(result => {
         generatedHTML +=
         `

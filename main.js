@@ -25,12 +25,14 @@ function generateHTML(results){
         generatedHTML +=
         `
         <div class="item">
-            <img src="./img-1.jpg" alt="">
+            <img src="${result.recipe.image}" alt="">
             <div class="flex-container">
-                <h1 class="title">This is a receipe</h1>
-                <a class="view-button" href="#">View Recipe</a>
+                <h1 class="title">${result.recipe.label}</h1>
+                <a class="view-button" href="${result.recipe.url}" target="_blank">View Recipe</a>
             </div>
-            <p class="item-data">Calories: 120</p>
+            <p class="item-data">Calories: ${result.recipe.calories.toFixed(2)}</p>
+            <p class="item-data">Diet Label: ${result.recipe.calories.dietLabels.length > 0 ? result.recipe.dietLabels : 'No Label Found'}</p>
+            <p class="item-data">Health Label: ${result.recipe.healthLabels}</p>
         </div>        
         `
     })

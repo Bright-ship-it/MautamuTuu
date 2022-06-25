@@ -16,8 +16,8 @@ async function fetchAPI (){
     const baseURL = `https://api.edamam.com/api/recipes/v2?q=${searchQuery}&app_id=${APP_ID}&app_key${APP_key}&to=15`;
     const response = await fetch(baseURL);
     const data = await response.json();
-    generateHTML(data.hits);
     console.log(data);
+    generateHTML(data.hits);
 }
 function generateHTML(results){
     container.classList.remove('initial');

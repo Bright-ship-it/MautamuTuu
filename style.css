@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:wght@400;600&display=swap');
+
 :root{
     --light-color: #fff;
     --dark-color: #282828;
@@ -11,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
 body{
@@ -95,10 +98,11 @@ header img{
 .recipe{
     height: 300px;
     width: 300px;
-    padding: 4px;
+    padding: 8px;
     box-shadow: 0px 0px 8px 2px var(--boarder-color);
     margin: 20px;
     transition: all 200ms ease-in-out;
+    border-radius: 4px 4px 0px 0px;
 }
 
 .recipe-title{
@@ -151,4 +155,9 @@ header img{
 
 .recipe:hover{
     height: 420px;
+}
+
+::selection{
+    color: var(--light-colo);
+    background: rgb(23, 151, 23);
 }

@@ -90,7 +90,7 @@ header img{
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    height: calc(100vh - (var(--header-height) + var(search-height) + 20px));
+    height: calc(100vh - (var(--header-height) + var(search-height)));
     overflow: hidden;
     overflow-y: auto;
 }

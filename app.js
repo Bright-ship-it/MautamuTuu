@@ -1,0 +1,35 @@
+const appId = "65e99521";
+const appKey = "6deaad8a3a55adcee283a6562c76aa02";
+const baseUrl = `https://api.edamam.com/api/recipes/v2?type=public&app_id=${appId}&app_Key=${appKey}`;
+const recipeContainer = document.querySelector("#recipe.container");
+
+function loadRecipies(type = "chicken"){
+    const url = baseUrl + `&q=${type}`;
+    fetch(url)
+        .then((res) => res.json())
+        .then((data) => renderRecipies(data.hits))
+        .catch((error) => console.log(error));
+}
+loadRecipies();
+
+const renderRecipies = (recipeList=[]) => {
+    recipeList.forEach((recipeObj) => {
+        const { label:recipeTitle, ingredientLines, image:recipeImage, } = recipeObj.recipe;
+        const htmlStr = `<div class="recipe">
+        <div class="recipe-title">${recipeTitle}</div>
+        <div class="reciper-image">
+            <img src="${recipeImage}" alt="Recipe">
+        </div>
+        <div class="recipe-text">
+            <ul>
+                <li>Step 1</li>
+                <li>Step 2</li>
+                <li>Step 3</li>
+                <li>Step 4</li>
+                <li>Step 5</li>                        
+            </ul>
+        </div>
+    </div>`;
+    recipeContainer.insertAdjacentElement("beforeend", htmlStr)
+    })
+}

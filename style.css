@@ -93,6 +93,7 @@ header img{
     padding: 4px;
     box-shadow: 0px 0px 8px 2px var(--boarder-color);
     margin: 20px;
+    transition: all 200ms ease-in-out;
 }
 
 .recipe-title{
@@ -121,6 +122,8 @@ header img{
     margin-top: 20px;
     overflow: hidden;
     overflow-y: auto;
+    transform: scale(0.8);
+    transform-origin: top left;
 }
 
 .recipe-text ul{
@@ -138,6 +141,7 @@ header img{
     height: 120px;
     visibility: visible;
     opacity: 1;
+    transform: scale(1);
 }
 
 .recipe:hover{

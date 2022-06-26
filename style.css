@@ -112,3 +112,34 @@ header img{
     width: 100%;
 }
 
+.recipe-text{
+    height: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+    background: #ccc;
+    margin-top: 20px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.recipe-text ul{
+    list-style-type: circle;
+    list-style-position: inside;
+    text-align: left;
+    padding: 5px;
+}
+
+.recipe-text ul > li{
+    padding: 5px;
+}
+
+.recipe:hover .recipe-text{
+    height: 120px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.recipe:hover{
+    height: 420px;
+}

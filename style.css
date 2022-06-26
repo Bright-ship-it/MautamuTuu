@@ -185,14 +185,6 @@ header img{
     box-shadow: 0px 0px 10px 2px var(--dark-color);
     width: 350px;
 }
-input[type = "text"]{
-    background: transparent;
-    color: var(--light-color);
-}
-.btn{
-    background: var(--light-color);
-    color: var(--dark-color);
-}
 
 /* Scroll bar css*/
 ::-webkit-scrollbar{

@@ -2,7 +2,7 @@ const appId = "65e99521";
 const appKey = "6deaad8a3a55adcee283a6562c76aa02";
 const baseUrl = `https://api.edamam.com/api/recipes/v2?type=public&app_id=${appId}&app_Key=${appKey}`;
 const recipeContainer = document.querySelector("#recipe.container");
-const txtSearch = document.querySelector("txtSearch");
+const txtSearch = document.querySelector("#txtSearch");
 const btnSearch = document.querySelector(".btn");
 const loadingEle = document.querySelector("#loading");
 
@@ -10,12 +10,12 @@ btnSearch.addEventListener("click", () => loadRecipies(txtSearch.value));
 
 txtSearch.addEventListener("keyup", (e) => {
     const inputVal = txtSearch.value;
-    if (e.keyCode === 13) {
+    if (e.keyCode === 13){
         loadRecipies(inputVal);
     }
 });
 
-const toggleLoad = (element, isShow) => {
+function toggleLoad(element, isShow) {
     element.classList.toggle("hide", isShow);
 }
 

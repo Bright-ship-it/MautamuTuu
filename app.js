@@ -9,10 +9,14 @@ btnSearch.addEventListener("click", () => loadRecipies(txtSearch.value));
 
 txtSearch.addEventListener("keyup", (e) => {
     const inputVal = txtSearch.value;
-    if (e.keyup === 13) {
+    if (e.keyCode === 13) {
         loadRecipies(inputVal);
     }
-})
+});
+
+const setScrollPosition = () => {
+    recipeContainer.scrollTo({top:0, behavior: "smooth"}); 
+};
 
 function loadRecipies(type = "chicken"){
     const url = baseUrl + `&q=${type}`;
@@ -20,6 +24,7 @@ function loadRecipies(type = "chicken"){
         .then((res) => res.json())
         .then((data) => renderRecipies(data.hits))
         .catch((error) => console.log(error));
+        /*.finally(() => setScrollPosition());*/
 }
 loadRecipies();
 

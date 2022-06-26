@@ -1,6 +1,6 @@
 const appId = "65e99521";
 const appKey = "6deaad8a3a55adcee283a6562c76aa02";
-const baseUrl = `https://api.edamam.com/api/recipes/v2?type=public&app_id=${appId}&app_Key=${appKey}`;
+const baseUrl =`https://api.edamam.com/api/recipes/v2?type=public&app_id=${appId}&app_Key=${appKey}`;
 const recipeContainer = document.querySelector("#recipe.container");
 const txtSearch = document.querySelector("#txtSearch");
 const btnSearch = document.querySelector(".btn");

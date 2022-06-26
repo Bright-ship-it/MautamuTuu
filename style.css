@@ -19,6 +19,11 @@ body{
     background: var(--light-color);
 }
 
+.container{
+    text-align: center;
+    height: calc(100vh - var(--header-height));
+}
+
 header{
     height: var(--header-height);
     background: var(--dark-color);
@@ -29,3 +34,81 @@ header{
     gap: 10px;
     padding-right: 30px;
 }
+
+header img{
+    filter: invert(1);
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--search-height);
+    gap: 10px;
+    box-shadow: 0px 2px 8px 0px var(--border-color);
+}
+
+.search input[type="text"]{
+    padding: 8px 10px;
+    line-height: 1.5;
+    font-size: 1rem;
+    border: none;
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid transparent;
+    outline: none;
+    transition: all 200ms ease-in-out;
+    width: 60%;
+}
+
+.search input[type="text"]:focus{
+    border-left-color: transparent;
+    border-bottom-color: var(--border-color);
+    width: 61%;
+}
+
+.btn{
+    padding: 8px 10px;
+    background: transparent;
+    border-radius: 2px;
+    user-select: none;
+    font-size: 1rem;
+    border: 1px solid #007bff;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--dark-color);
+    color: var(--light-color);
+}
+
+#recipe-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.recipe{
+    height: 300px;
+    width: 300px;
+    padding: 4px;
+    box-shadow: 0px 0px 8px 2px var(--boarder-color);
+    margin: 20px;
+}
+
+.recipe-title{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.recipe-image{
+    height: 210px;
+}
+
+.recipe-image img{
+    height: 100%;
+    width: 100%;
+}
+

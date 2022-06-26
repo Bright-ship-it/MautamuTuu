@@ -19,9 +19,9 @@ function toggleLoad(element, isShow) {
     element.classList.toggle("hide", isShow);
 }
 
-const setScrollPosition = () => {
-    recipeContainer.scrollTo({top:0, behavior: "smooth"}); 
-};
+/*const setScrollPosition = () => {
+    recipeContainer.scrollTo({top: 0, behavior: "smooth" });
+};*/
 
 function loadRecipies(type = "chicken"){
     toggleLoad(loadingEle, false);
@@ -33,7 +33,7 @@ function loadRecipies(type = "chicken"){
             toggleLoad(loadingEle,true);
         })
         .catch((error) => toggleLoad(loadingEle, true))
-        .finally(() => setScrollPosition());
+        /*.finally(() => setScrollPosition());*/
 }
 loadRecipies();
 

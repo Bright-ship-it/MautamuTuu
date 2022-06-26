@@ -2,6 +2,17 @@ const appId = "65e99521";
 const appKey = "6deaad8a3a55adcee283a6562c76aa02";
 const baseUrl = `https://api.edamam.com/api/recipes/v2?type=public&app_id=${appId}&app_Key=${appKey}`;
 const recipeContainer = document.querySelector("#recipe.container");
+const txtSearch = document.querySelector("txtSearch");
+const btnSearch = document.querySelector(".btn");
+
+btnSearch.addEventListener("click", () => loadRecipies(txtSearch.value));
+
+txtSearch.addEventListener("keyup", (e) => {
+    const inputVal = txtSearch.value;
+    if (e.keyup === 13) {
+        loadRecipies(inputVal);
+    }
+})
 
 function loadRecipies(type = "chicken"){
     const url = baseUrl + `&q=${type}`;
@@ -21,6 +32,7 @@ const getRecipeStepsStr = (ingredientLines = []) => {
 };
 
 const renderRecipies = (recipeList=[]) => {
+    recipeContainer.innerHTML = ";"
     recipeList.forEach((recipeObj) => {
         const { label:recipeTitle, ingredientLines, image:recipeImage, } = recipeObj.recipe;
         const recipeRecipeStepStr = getRecipeStepsStr(ingredientLines);

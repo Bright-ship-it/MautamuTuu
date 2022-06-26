@@ -12,9 +12,18 @@ function loadRecipies(type = "chicken"){
 }
 loadRecipies();
 
+const getRecipeStepsStr = (ingredientLines = []) => {
+    let str = "";
+    for(var step of ingredientLines) {
+        str = str + `<li>${step}</li>`
+    }
+    return str;
+};
+
 const renderRecipies = (recipeList=[]) => {
     recipeList.forEach((recipeObj) => {
         const { label:recipeTitle, ingredientLines, image:recipeImage, } = recipeObj.recipe;
+        const recipeRecipeStepStr = getRecipeStepsStr(ingredientLines);
         const htmlStr = `<div class="recipe">
         <div class="recipe-title">${recipeTitle}</div>
         <div class="reciper-image">
@@ -22,11 +31,7 @@ const renderRecipies = (recipeList=[]) => {
         </div>
         <div class="recipe-text">
             <ul>
-                <li>Step 1</li>
-                <li>Step 2</li>
-                <li>Step 3</li>
-                <li>Step 4</li>
-                <li>Step 5</li>                        
+             ${recipeRecipeStepStr}                      
             </ul>
         </div>
     </div>`;

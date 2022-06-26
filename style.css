@@ -17,6 +17,7 @@ body{
     height: 100vh;
     width: 100vw;
     background: var(--light-color);
+    overflow: hidden;
 }
 
 .container{
@@ -85,6 +86,10 @@ header img{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
+    height: calc(100vh - (var(--header-height) + var(search-height) + 20px));
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 .recipe{

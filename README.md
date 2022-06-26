@@ -11,10 +11,10 @@ On the `Search Recipe..` type in your favorite food; can be Fish, Chicken, Mutto
 
 
 ### Ingredients of the food
-Once your recipe has populated, just hover on it and you will see the  `ingredients` of the food you want to prepare :<br><br>
+Once your recipe has populated, just *hover* on it and you will see the  `ingredients` of the food you want to prepare :<br><br>
 
 
-### When food you search is unavailable on this app ...
+### When the Food Recipe you are searching is unavailable on this website ...
 The page will remain blank - I've not implemented an error message yet.. : <br><br>
 
 ## How to Run :
@@ -31,7 +31,7 @@ Open [Mautamu Tuu!](https://bright-ship-it.github.io/MautamuTuu/) to view it in 
 <br></br>
 
 ## Contributors :
-This project is owned by Wilbright Luminzu, a Hustler.. and a Software engineer student at Moringa School.
+This project is owned by Wilbright Luminzu, a Hustler.. and a Software Engineering student at Moringa School.
 
 ### Contant Info :
 My contact; <br>
@@ -44,7 +44,7 @@ Phone no: +254711447166 <br>
 This is a one page project which should display the Food Recipes fetched from [edamam.com](https://www.edamam.com/) public APIs. <br></br>It is an HTML, CSS and JavaScript project that communicates with the public API to pull all the more than 50,000 food recipes. <br><br/>It is user friendly and it is easy to navigate ar  ound while on it. It works well with all the browsers on all the PCs, mobile devices and tablets.<br></br> This website's provide more than enough food recipes from all over the world. This website will display the ingredients and even the photos of the food displayed should give you the appetite and encouragment that you can prepare some delicious world-classs meal in your own kitchen.
 
 ## Issues to encounter or bugs :
-There are no bugs at the moment. But the API has been breaking in the course of building this website with this error;  _has been blocked by CORS policy_
+There are no bugs at the moment. But the API has been breaking in the course of building this website with this error;  _has been blocked by CORS policy:No 'Access-Control-Allow-Origin' header is present on the requested resource_
 
 ## Technologies Used :
 ### JavaScript
@@ -55,4 +55,4 @@ There are no bugs at the moment. But the API has been breaking in the course of 
 - For Styling the page.
 
 # License:
-Bruuh, this page has not been license; knock yourself out mate! Lol...
+Bruuh, this page has not been licensed; knock yourself out mate! Lol...

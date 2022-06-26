@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <title>Mautamu!</title>
+    <link rel="stylesheet" href="style.css"/>
+</head> 
 <body>
-    <section>
-        <div class="container initial">
-            <h1 class="brand">Mautamu Tuu!</h1>
-            <form>
-                <input type="text" placeholder="Search Here...">
-                <ion-icon name="search"></ion-icon>
-            </form>
-            <div class="search-result">
-
-                    <!-- <div class="item">
-                    <img src="./img-1.jpg" alt="">
-                    <div class="flex-container">
-                        <h1 class="title">This is a recipe</h1>
-                        <a class="view-button" href="#">View Recipe</a>
-                    </div>
-                    <p class="item-data">Calories: 1000</p>
-                </div> -->
-
+    <header>
+        <h2>Mautamu Tuu!</h2>
+        <img src="images/searche.png" alt="Search"/>
+    </header>
+    <section class="container">
+        <div class="search">
+            <input type="text" placeholder="Search Recipe.." autofocus/>
+            <button class="btn">Search</button>
+        </div>
+        <div id="receipe-container">
+            <div class="recipe">
+                <div class="recipe-title">Recipe Title</div>
+                <div class="reciper-image">
+                    <img src="images/recipe.jpeg" alt="Recipe">
+                </div>
+                <div class="recipe-text">
+                    <ul>
+                        <li>Step 1</li>
+                        <li>Step 2</li>
+                        <li>Step 3</li>
+                        <li>Step 4</li>
+                        <li>Step 5</li>                        
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="./main.js"></script>
-</body>
 </html>

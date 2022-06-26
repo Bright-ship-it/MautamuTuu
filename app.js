@@ -4,6 +4,7 @@ const baseUrl = `https://api.edamam.com/api/recipes/v2?type=public&app_id=${appI
 const recipeContainer = document.querySelector("#recipe.container");
 const txtSearch = document.querySelector("txtSearch");
 const btnSearch = document.querySelector(".btn");
+const loadingEle = document.querySelector("#loading");
 
 btnSearch.addEventListener("click", () => loadRecipies(txtSearch.value));
 
@@ -14,17 +15,25 @@ txtSearch.addEventListener("keyup", (e) => {
     }
 });
 
+const toggleLoad = (element, isShow) => {
+    element.classList.toggle("hide", isShow);
+}
+
 const setScrollPosition = () => {
     recipeContainer.scrollTo({top:0, behavior: "smooth"}); 
 };
 
 function loadRecipies(type = "chicken"){
+    toggleLoad(loadingEle, false);
     const url = baseUrl + `&q=${type}`;
     fetch(url)
         .then((res) => res.json())
-        .then((data) => renderRecipies(data.hits))
-        .catch((error) => console.log(error));
-        /*.finally(() => setScrollPosition());*/
+        .then((data) => {
+            renderRecipies(data.hits)
+            toggleLoad(loadingEle,true);
+        })
+        .catch((error) => toggleLoad(loadingEle, true))
+        .finally(() => setScrollPosition());
 }
 loadRecipies();
 

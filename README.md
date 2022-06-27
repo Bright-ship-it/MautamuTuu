@@ -1,7 +1,7 @@
 # MautamuTuu
 
-Bored of eating ordinary food? Wanna cook something delicious out of the world, but have no idea to cook? Then this website is for you!
-Mautamu Tuu! Presents you with the full Recipes, ingredients of food that you may like and how to cook it! <br></br>
+Bored of eating ordinary food? Wanna cook something delicious out of the world, but have no idea to cook? Then this website is for you!<br></br>
+Mautamu Tuu! Presents you with the full Recipes, ingredients of food that you may like and how to cook it!
 
 Mautamu Tu!, is a Swahili word meaning: _Just Sweetness_ in other words, _Pure Sweetness_. 
 
@@ -56,6 +56,8 @@ There are no bugs at the moment. But the API has been breaking in the course of 
 - For page structures.
 ### CSS
 - For Styling the page.
+### API
+- [Edamam](https://www.edamam.com/)
 
 ## License:
 This page has not been licensed!

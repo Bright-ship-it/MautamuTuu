@@ -1,7 +1,9 @@
 # MautamuTuu
 
 Bored of eating ordinary food? Wanna cook something delicious out of the world, but have no idea to cook? Then this website is for you!
-Mautamu Tuu! Presents you with the full Recipes, ingredients of food that you may like and how to cook it!
+Mautamu Tuu! Presents you with the full Recipes, ingredients of food that you may like and how to cook it! <br></br>
+
+Mautamu Tu!, is a Swahili word meaning: _Just Sweetness_ in other words, _Pure Sweetness_. 
 
 ## Demo
 Here are how this app looks when you first open the link to it :

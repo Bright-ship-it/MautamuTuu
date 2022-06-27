@@ -64,3 +64,4 @@ const renderRecipies = (recipeList=[]) => {
     recipeContainer.insertAdjacentElement("beforeend", htmlStr)
     })
 }
+

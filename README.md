@@ -43,8 +43,8 @@ Phone no: +254711447166 <br>
 # Description :
 This is a one page project which should display the Food Recipes fetched from [edamam.com](https://www.edamam.com/) public APIs. <br></br>It is an HTML, CSS and JavaScript project that communicates with the public API to pull all the more than 50,000 food recipes. <br><br/>It is user friendly and it is easy to navigate ar  ound while on it. It works well with all the browsers on all the PCs, mobile devices and tablets.<br></br> This website's provide more than enough food recipes from all over the world. This website will display the ingredients and even the photos of the food displayed should give you the appetite and encouragment that you can prepare some delicious world-classs meal in your own kitchen.
 
-## Issues to encounter or bugs :
-There are no bugs at the moment. But the API has been breaking in the course of building this website with this error;  _has been blocked by CORS policy:No 'Access-Control-Allow-Origin' header is present on the requested resource_
+# Issues to encounter or bugs :
+There are no bugs at the moment. But the API has been breaking in the course of building this website, and can break while running it, with this error;  _has been blocked by CORS policy:No 'Access-Control-Allow-Origin' header is present on the requested resource_
 
 ## Technologies Used :
 ### JavaScript
@@ -54,5 +54,5 @@ There are no bugs at the moment. But the API has been breaking in the course of 
 ### CSS
 - For Styling the page.
 
-# License:
-Bruuh, this page has not been licensed; knock yourself out mate! Lol...
+## License:
+This page has not been licensed!
